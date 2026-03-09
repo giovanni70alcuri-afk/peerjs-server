@@ -2,7 +2,8 @@ const { PeerServer } = require('peer');
 
 const peerServer = PeerServer({
   port: process.env.PORT || 9000,
-  path: '/'
+  path: '/',
+  allow_discovery: true
 });
 
 console.log('PeerJS server running');
